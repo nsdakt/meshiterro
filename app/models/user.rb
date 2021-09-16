@@ -7,4 +7,5 @@ class User < ApplicationRecord
   has_many :post_images, dependent: :destroy #投稿した画像とのアソシエーション
   has_many :post_comments, dependent: :destroy #投稿したコメントとのアソシエーション
   has_many :favorites, dependent: :destroy #投稿へのいいねのアソシエーション
+  attachment :profile_image
 end
